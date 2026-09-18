@@ -8,7 +8,7 @@ pipeline{
             }
             stage('Run'){
                 steps{
-                    bat 'java -cp  src Hello'
+                    bat 'javac -cp  src src/Hello.java'
                 }
             }
         }
